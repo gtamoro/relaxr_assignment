@@ -57,11 +57,11 @@ h1 {
   font-weight: 800;
 }
 
-.section_top h1 {
+.landing h1 {
   padding-left: 50px;
 }
 
-.section_top h2 {
+.landing h2 {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
@@ -77,14 +77,15 @@ h1 {
   padding-bottom: 5px;
   padding-left: 25px;
   padding-right: 25px;
+  cursor: pointer;
 }
 
-.section_middle h1 {
+.benefits h1 {
   font-weight: 600;
   font-size: 20px;
 }
 
-.section_middle p {
+.benefits p {
   font-weight: 300;
   font-size: 13px;
 }
@@ -121,19 +122,23 @@ img {
 /******************************************
 /* BACKGROUND & COLOURS
 /*******************************************/
-.section_top {
+.landing {
   background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
   background-size: cover;
 }
 
-.get_it {
+.button.primary {
   background-color: #f9e42e;
   color: #033048;
 }
 
-.section_middle {
+.benefits {
   background-color: #f0efef;
   color: #606161;
+}
+
+.benefits_content h1 {
+  color: #033048;
 }
 
 .testimonial {
@@ -141,24 +146,16 @@ img {
   background-size: cover;
 }
 
-.section_bottom h1 {
-  color: #f9e42e;
-}
-
-.section_middle h1 {
-  color: #033048;
-}
-
 .signup {
   background-color: #f9e42e;
 }
 
-.signup div {
+.button.secondary {
   background-color: #033048;
   color: white;
 }
 
-.section_bottom {
+.footer {
   background-color: #121212;
 }
 
@@ -174,24 +171,25 @@ img {
   flex-direction: column;
 }
 
-.section_top {
+.landing {
   flex-direction: column;
   height: 100vh;
   display: flex;
 }
 
-.top_header {
+.logo {
   flex-basis: 30%;
 }
 
-.top_main {
+.landing_content {
   flex-basis: 70%;
   flex-direction: column;
   display: flex;
   align-items: center;
 }
 
-.section_middle {
+.benefits {
+  display: flex;
   flex-direction: column;
   height: auto;
   padding-left: 50px;
@@ -199,14 +197,14 @@ img {
   padding-bottom: 20px;
 }
 
-.middle_left {
+.benefits_content {
   width: 50%;
 }
-
+/*
 .section_bottom {
   flex-direction: column;
   height: auto;
-}
+}*/
 
 .testimonial {
   display: flex;
