@@ -200,11 +200,6 @@ img {
 .benefits_content {
   width: 50%;
 }
-/*
-.section_bottom {
-  flex-direction: column;
-  height: auto;
-}*/
 
 .testimonial {
   display: flex;
